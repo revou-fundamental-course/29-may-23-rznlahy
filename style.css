@@ -1,0 +1,153 @@
+body {
+     font-family: Arial, sans-serif;
+     line-height: 1.6;
+     color: #333;
+ }
+
+ h3 {
+     font-size: 24px;
+     font-weight: bold;
+     margin-top: 30px;
+ }
+
+ p {
+     font-size: 16px;
+     margin-top: 10px;
+ }
+
+ .header-wrapper {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 2px solid black;
+     padding: 16px 24px;
+ }
+
+ .header-wrapper > .menu {
+     display: flex;
+ }
+
+ .header-wrapper > .menu > button {
+     background-color: white;
+     padding: 8px 16px;
+     border: 1px solid gray;
+     cursor: pointer;
+     transition: 0.3s background-color ease-out;
+ }
+
+ .header-wrapper > .menu > button:hover {
+     background-color: gainsboro;
+ }
+
+ .header-wrapper > .menu > button:first-child {
+     border-radius: 4px 0 0 4px;
+ }
+
+ .header-wrapper > .menu > button:last-child {
+     border-radius: 0 4px 4px 0;
+ }
+
+ .header-wrapper > .logo {
+     width: auto;
+     height: 40px;
+ }
+
+ .main-content {
+     padding: 24px;
+     width: 100%;
+ }
+
+ .main-content .form-section {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: start;
+ }
+
+ .main-content .form-section form,
+ .main-content .form-section div {
+     width: 100%;
+ }
+
+ .img-slideshow {
+     width: 100%;
+ }
+
+ .slideshow-buttons {
+     margin-top: 10px;
+ }
+
+ .profile-images {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ max-width: 600px;
+ margin-top: 20px;
+ }
+
+ .profile-images div {
+ text-align: center;
+ }
+
+ .profile-images img {
+ width: 120px;
+ height: 120px;
+ object-fit: cover;
+ border-radius: 50%;
+ }
+
+ .profile-images p {
+ text-align: center;
+ }
+
+.profile-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-item .image-container {
+    margin-bottom: 10px;
+}
+
+.profile-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.footer {
+    text-align: right;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.created-by {
+    margin: 0;
+}
+
+
+
+ @media only screen and (max-width: 600px) {
+     .header-wrapper {
+         flex-direction: column;
+     }
+
+     .menu {
+         width: 100%;
+         flex-direction: column;
+     }
+
+     .logo {
+         margin-bottom: 14px;
+     }
+ }
+
+ .form-output {
+     border: 1px solid black;
+     padding: 16px;
+     margin-top: 24px;
+ }
